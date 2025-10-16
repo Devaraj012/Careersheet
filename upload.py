@@ -101,7 +101,8 @@ queries = {
     9:db.users.aggregate([
       {"$match": { 
         "role": "collegeadmin",
-        "name":{"$nin":["Amal Das","Swetha S","Krishna Murthy","dev s "]}} },
+        "name":{"$in":["Vadivelan Gopal","Vandana Madhavkumar Dean IR"]}} 
+      },
       {
         "$lookup":{
           "from":"loginhistories",
